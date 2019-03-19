@@ -1,0 +1,27 @@
+#repeat {
+    background-image: url("image/Vyllehd-Art-Effects_-534x462.jpg");
+    background-repeat: repeat;
+    color: mintcream;
+
+}
+
+#no-repeat {
+    background-image: url("image/Vyllehd-Art-Effects_-534x462.jpg");
+    background-repeat: no-repeat;
+    color: mintcream;
+
+}
+
+#repeat-x {
+    background-image: url("image/Vyllehd-Art-Effects_-534x462.jpg");
+    background-repeat: repeat-x;
+    color: mintcream;
+
+}
+
+#repeat-y {
+    background-image: url("image/Vyllehd-Art-Effects_-534x462.jpg");
+    background-repeat: repeat-y;
+    color: mintcream;
+
+}

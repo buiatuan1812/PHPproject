@@ -1,0 +1,25 @@
+#title {
+    color: darkred;
+    text-align: center;
+}
+
+#wrap {
+    margin-top: 150px;
+}
+
+#hn {
+    color: mediumseagreen;
+    font-size: 24px;
+    font-family: Bahnschrift;
+}
+
+#hcm {
+    color: #FFFF00;
+    font-size: 24px;
+}
+
+#dn {
+    color: blueviolet;
+    font-size: 24px;
+}
+

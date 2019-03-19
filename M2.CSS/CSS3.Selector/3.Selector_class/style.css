@@ -1,0 +1,21 @@
+h1 {
+    color: darkred;
+    text-align: center;
+}
+
+.mb {
+    color: blue;
+}
+
+.mt {
+    color: green;
+}
+
+.mn {
+    color: orange;
+}
+
+.trunguong {
+    font-weight: bold;
+    font-size: 24px;
+}
