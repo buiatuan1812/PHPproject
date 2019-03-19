@@ -1,0 +1,29 @@
+p {
+    font-weight: bold;
+}
+
+#idp {
+    color: red;
+}
+
+.classp {
+    color: blue;
+
+}
+
+#menu {
+    background-color: red;
+    color: white;
+}
+
+#menu ul ul > li {
+    color: #FFFF00;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#menu ul li{
+    color: #FFFF00;
+    font-weight: bold;
+    font-size: 20px;
+}
