@@ -1,0 +1,41 @@
+#top {
+    border-top-style: dotted;
+    border-top-width: 5px;
+    border-top-color: mediumseagreen;
+    /*border: 5px dotted mediumseagreen;*/
+}
+#right {
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-right-color: #FF6347;
+    /*border: 5px solid #FF6347;*/
+}
+#left {
+    border-left-style: double;
+    border-left-width: 5px;
+    border-left-color: #FFFF00;
+    /*border: 5px double #FFFF00;*/
+}
+#bottom {
+    border-bottom-style: dashed;
+    border-bottom-width: 5px;
+    border-bottom-color: green;
+    /*border: 5px dashed green;*/
+}
+#target {
+    border-top-style: dotted;
+    border-top-width: 5px;
+    border-top-color: mediumseagreen;
+
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-right-color: #FF6347;
+
+    border-left-style: double;
+    border-left-width: 5px;
+    border-left-color: #FFFF00;
+
+    border-bottom-style: dashed;
+    border-bottom-width: 5px;
+    border-bottom-color: green;
+}

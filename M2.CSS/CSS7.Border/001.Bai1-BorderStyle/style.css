@@ -1,0 +1,33 @@
+#boder-dotted {
+    border-style: dotted;
+}
+#boder-dashed {
+    border-style: dashed;
+}
+#boder-solid {
+    border-style: solid;
+}
+#boder-double {
+    border-style: double;
+}
+#boder-groove {
+    border-style: groove;
+}
+#boder-ridge {
+    border-style: ridge;
+}
+#boder-inset {
+    border-style: inset;
+}
+#boder-outset {
+    border-style: outset;
+}
+#boder-hidden {
+    border-style: hidden;
+}
+#boder-none {
+    border-style: none;
+}
+#boder-mix {
+    border-style: dotted dashed solid double;
+}
