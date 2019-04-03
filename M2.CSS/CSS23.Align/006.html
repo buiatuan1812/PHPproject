@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        #parent1, #parent2, #parent3 {
+            background: blue;
+            width: 800px;
+            height: 400px;
+            position: relative;
+            margin: 30px;
+            color: white;
+            font-size: 28px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        #child1, #child2, #child3 {
+            background: burlywood;
+            width: 50%;
+        }
+
+        #child1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #child2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #child3 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Căn trái, Căn phải, Căn giữa theo chiều dọc khi 1 thẻ block nằm trong 1 thẻ block khác</h1>
+    <p>và mình sẽ căn trái, phải, giữa theo chiều dọc theo thẻ mẹ</p>
+    <p>khi căn vị trí theo thẻ mẹ sử dụng kĩ thuật position</p>
+    <p>1- cần đặt position cho thẻ mẹ là relative</p>
+    <p>2- đặt position cho thẻ con là absolute và đặt các thuộc tính Css vị trí top,
+    left, right, bottom theo nhu cầu thực tế</p>
+    <p>Căn theo chiều dọc bên trên thì top: 0</p>
+    <p>Căn theo chiều dọc ở giữa thì top: 50% và transform: translate(-x, -50%);</p>
+    <p>Căn theo chiều dọc ở bên dưới thì bottom: 0</p>
+    <div id="parent1">
+        <div id="child1">
+            Căn Trái
+            <img src="dog.jpg" style="width: 200px"/>
+        </div>
+    </div>
+
+    <div id="parent2">
+        <div id="child2">
+            Căn Giữa
+            <img src="dog.jpg" style="width: 200px"/>
+        </div>
+    </div>
+
+    <div id="parent3">
+        <div id="child3">
+            Căn Phải
+            <img src="dog.jpg" style="width: 200px"/>
+        </div>
+    </div>
+
+
+</body>
+</html>

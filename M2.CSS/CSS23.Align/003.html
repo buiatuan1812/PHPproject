@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        #img1 {
+            display: block;
+            margin: 10px auto;
+        }
+
+        #target1 {
+            background: green;
+            width: 500px;
+            margin: 10px auto;
+        }
+
+        #img2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Căn giữa theo chiều ngang với Hình ảnh</h1>
+    <p>Để căn giữa hình ảnh theo chiều ngang ta cần phải đặt display: block</p>
+    <p>và sẽ đặt margin-left: auto và margin-right:auto</p>
+
+
+    <img id="img1" src="dog.jpg"/>
+
+    <div id="target1">
+        <img id="img2" src="dog.jpg"/>
+    </div>
+
+
+</body>
+</html>

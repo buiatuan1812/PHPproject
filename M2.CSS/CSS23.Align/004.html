@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        #target1, #target2, #target3 {
+            width: 500px;
+            color: #FFFF00;
+            padding: 30px;
+
+        }
+
+        #target1 {
+            background: mediumseagreen;
+            position: absolute;
+            top: 300px;
+            left: 0;
+        }
+
+        #target2 {
+            background: red;
+            position: absolute;
+            top: 600px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        #target3 {
+            background: #FF6347;
+            position: absolute;
+            top: 900px;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Căn trái, Căn phải, Căn giữa theo chiều ngang sử dụng position</h1>
+    <p>- Nếu thẻ Block nằm trực tiếp trong thẻ body và có position: absolute</p>
+    <p>- Thẻ Block phải có độ rộng nhất định</p>
+    <p>- Căn trái sử dụng left: 0</p>
+    <p>- Căn phải sử dụng right: 0</p>
+    <p>- Căn giữa ta sử dụng thuộc tính transform: translate(-50%, 0);</p>
+    <div id="target1">
+        Block căn theo bên trái
+        <img id="img1" src="dog.jpg"/>
+    </div>
+
+    <div id="target2">
+        Block căn theo giữa
+        <img id="img1" src="dog.jpg"/>
+    </div>
+
+    <div id="target3">
+        Block căn theo bên phải
+        <img id="img1" src="dog.jpg"/>
+    </div>
+</body>
+</html>
