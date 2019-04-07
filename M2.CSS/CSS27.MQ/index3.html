@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css"/>
+    <style type="text/css">
+        .wrap {
+            overflow: hidden;
+        }
+
+        .wrap #sidebar {
+            width: 20%;
+            float: left;
+        }
+
+        .wrap #main {
+            width: 80%;
+            float: right;
+            background-color: mediumseagreen;
+        }
+
+        @media screen and (max-width: 700px){
+            .wrap #sidebar {
+                width: 100%;
+            }
+
+            .wrap #main {
+                width: 100%;
+                background-color: darkkhaki;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id="sidebar">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+
+        </div>
+        <div id="main">
+            <h1>Nội dung chính của trang web</h1>
+            <p>Nội dung chính của trang web</p>
+            <p>Nội dung chính của trang web</p>
+            <p>Nội dung chính của trang web</p>
+            <p>Nội dung chính của trang web</p>
+        </div>
+
+    </div>
+</body>
+</html>
