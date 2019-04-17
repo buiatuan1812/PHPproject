@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css"/>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            overflow: auto;
+        }
+        .row {
+            overflow: auto;
+            background: #CCCCCC;
+            padding: 30px 0;
+        }
+        .row::before {
+            content: "BEFORE INNER CONTENT";
+            background: red;
+            clear: both;
+            display: block;
+        }
+        .row::after {
+            content: "AFTER INNER CONTENT";
+            background: blueviolet;
+            clear: both;
+            display: block;
+        }
+        .col {
+            min-height: 300px;
+            padding: 30px;
+        }
+        .col-1 {
+            width: 33%;
+            background: green;
+            color: white;
+            float: left;
+        }
+        .col-2 {
+            width: 67%;
+            background: orange;
+            color: white;
+            float: right;
+        }
+
+
+        @media screen and (max-width: 1000px) {
+            .row {
+                overflow: auto;
+            }
+            .col-1 {
+                width: 20%;
+                background-color: #FFFF00;
+                color: black;
+                float: left;
+            }
+
+            .col-2 {
+                width: 80%;
+                background-color: white;
+                color: black;
+                float: right;
+            }
+
+            .row::before {
+                width: 100%;
+            }
+
+            .row::after {
+                width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .col-1 {
+                width: 100%;
+                background-color: blue;
+                color: black;
+            }
+
+            .col-2{
+                width: 100%;
+                background-color: deeppink;
+                color: black;
+            }
+
+            .row::before {
+                width: 100%;
+            }
+
+            .row::after {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col col-1">Column 1</div>
+            <div class="col col-2">Column 2</div>
+
+        </div>
+
+    </div>
+</body>
+</html>
