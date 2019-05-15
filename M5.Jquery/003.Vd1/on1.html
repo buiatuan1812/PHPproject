@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Phương thức on trong jquery cho phép bạn gắn nhiều sự kiện và callback vào 1 đối tượng</h3>
+<p>các method click, dblclick,... chỉ cho phép gắn 1 sự kiện</p>
+<div class="container" style="padding: 30px; background-color: mediumseagreen; color: white">
+    Phương thức on trong jquery cho phép bạn gắn nhiều sự kiện và callback vào 1 đối tượng
+    Phương thức on trong jquery cho phép bạn gắn nhiều sự kiện và callback vào 1 đối tượng
+    Phương thức on trong jquery cho phép bạn gắn nhiều sự kiện và callback vào 1 đối tượng
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+       $(".container").on({
+           click: function () {
+             $(this).css("background","red");
+           },
+
+            dblclick: function () {
+                $(this).css("background","yellow");
+            },
+
+            mouseenter: function () {
+                $(this).css("background","orange");
+            },
+
+            mouseleave: function () {
+                $(this).css("background","mediumseagreen");
+            },
+
+       });
+
+    });
+
+</script>
+
+</body>
+</html>

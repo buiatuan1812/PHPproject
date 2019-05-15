@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Các sự kiện di chuột mouseenter (di chuột vào) và mouseleave (di chuột ra)</h3>
+<div class="container" style="background-color: green; margin-top: 50px; padding: 30px; color: white" >
+    CSS selector là bộ chọn css để chọn các thẻ html mà các bạn mong muốn
+    ví dụ : .class, #id , tag_name ( body , div , p ... )
+</div>
+
+
+<div class="container" style="background-color: green; margin-top: 50px; padding: 30px; color: white" >
+    CSS selector là bộ chọn css để chọn các thẻ html mà các bạn mong muốn
+    ví dụ : .class, #id , tag_name ( body , div , p ... )
+</div>
+
+
+<div class="container" style="background-color: green; margin-top: 50px; padding: 30px; color: white" >
+    CSS selector là bộ chọn css để chọn các thẻ html mà các bạn mong muốn
+    ví dụ : .class, #id , tag_name ( body , div , p ... )
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        //di chuột vào
+        //bên trong mouseenter là 1 callback
+        $(".container").mouseenter(function () {
+            // this là .container nhưng nó là 1 đối tượng cụ thể
+            // là đối tượng đang chịu tác động
+
+            $(this).css("background","red");
+
+
+        });
+
+        //di chuột ra
+        $(".container").mouseleave(function () {
+
+            $(this).css("background","green")
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
