@@ -15,7 +15,7 @@
     } elseif ($age < 50) {
         echo "<br>Trung niên";
     } else {
-        echo "<br>Người già"
+        echo "<br>Người già";
     }
     ?>
 </body>
