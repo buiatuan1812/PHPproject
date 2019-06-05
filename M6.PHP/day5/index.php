@@ -14,12 +14,12 @@
                 <form name="hw" action="get.php" method="get">
                     <div class="form-hw">
                         <label for="">Chiều Cao</label>
-                        <input name="chieucao" type="number" placeholder="cm"/>
+                        <input name="chieucao" type="text" placeholder="cm"/>
                     </div>
 
                     <div class="form-hw">
                         <label for="">Cân Nặng</label>
-                        <input name="cannang" type="number" placeholder="kg"/>
+                        <input name="cannang" type="text" placeholder="kg"/>
                     </div>
 
                     <button type="submit">Submit</button>

@@ -10,8 +10,20 @@
         echo "Phân loại: Gầy <br>";
         echo "Nguy cơ phát triển bệnh: Thấp<br>";
 
-    } elseif ($ibm >= 18.5 && $ibm <= 24.9) {
-        echo "Phân loại: Gầy <br>";
-        echo "Nguy cơ phát triển bệnh: Thấp<br>";
+    } elseif ($ibm >= 18.5 && $ibm < 25) {
+        echo "Phân loại: Bình thường <br>";
+        echo "Nguy cơ phát triển bệnh: Trung bình<br>";
+    } elseif ($ibm >= 25 && $ibm < 30) {
+        echo "Phân loại: Hơi béo <br>";
+        echo "Nguy cơ phát triển bệnh: Cao<br>";
+    } elseif ($ibm >= 30 && $ibm < 35) {
+        echo "Phân loại: Béo phì cấp độ 1 <br>";
+        echo "Nguy cơ phát triển bệnh: Cao<br>";
+    } elseif ($ibm >= 35 && $ibm < 40) {
+        echo "Phân loại: Béo phì cấp độ 2 <br>";
+        echo "Nguy cơ phát triển bệnh: Rất cao<br>";
+    } elseif ($ibm >= 40 ) {
+        echo "Phân loại: Béo phì cấp độ 3 <br>";
+        echo "Nguy cơ phát triển bệnh: Nguy hiểm<br>";
     }
 ?>
